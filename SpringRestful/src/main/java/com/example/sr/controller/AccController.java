@@ -56,7 +56,7 @@ public class AccController {
 	 * @param accEntity 想要更改的数据记录信息
 	 */
 	@RequestMapping(value = "/user", method = RequestMethod.PUT)
-	public void update(AccEntity accEntity) {
+	public void update(@RequestBody AccEntity accEntity) {
 		accService.update(accEntity);
 	}
 
